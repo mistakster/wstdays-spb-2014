@@ -7,9 +7,16 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
     <style>
+		.slide:after {
+			/* hide ribbon */
+			visibility: hidden;
+		}
         .slide.cover {
             background: white;
         }
+		.slide h3 {
+			font-weight: bold;
+		}
         .slide.shout h2 .quiet {
             font-size: 80px;
         }
@@ -127,10 +134,20 @@
             </pre>
         </div>
     </section>
-    <section class="slide cover w">
-        <div>
-            <img src="assets/wierd-device.png">
-        </div>
+    <section class="slide">
+		<div>
+			<div style="float: left; width: 55%;">
+				<h2>Очередной «убийца» Apple iPad</h2>
+				<h3>Samsung Galaxy Tab P1000</h3>
+				<p>
+					Паспортное разрешение экрана:<br>
+					<strong>1024 &times; 600 точек</strong>
+				</p>
+			</div>
+			<div style="float: right; width: 40%;">
+				<img src="assets/samsung-galaxy-tab-p1000.png" style="width: 100%;">
+			</div>
+		</div>
     </section>
     <section class="slide">
         <div>
@@ -265,7 +282,6 @@
                 <code>@import "layout";</code>
                 <code>@import "component-a";</code>
                 <code>@import "page";</code>
-                
                 <code>@import "layout-desktop";</code>
                 <code>@import "page-desktop";</code>
             </pre>
