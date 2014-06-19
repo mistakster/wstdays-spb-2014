@@ -30,7 +30,6 @@
             font-size: 150px;
         }
         #Intro .conference {
-            font-weight: bold;
             margin-bottom: 20px;
         }
         #Intro:after {
@@ -45,7 +44,7 @@
     </header>
     <section class="slide introduction" id="Intro">
         <div>
-            <p class="conference">Web Standards Days, Санкт-Петербург, Июнь 2014</p>
+            <p class="conference">Web Standards Days, Санкт-Петербург, 2014</p>
             <h2>От&nbsp;простого к&nbsp;сложному</h2>
             <p><a href="http://noteskeeper.ru/about/">Владимир Кузнецов</a>,
                 <span class="light">Engine6</span></p>
@@ -284,9 +283,10 @@
             <pre>
                 <code>@import "layout";</code>
                 <code>@import "component-a";</code>
-                <code>@import "page";</code>
-                <code>@import "layout-desktop";</code>
-                <code>@import "page-desktop";</code>
+                <code>@import "page-1";</code>
+                <code>@import "page-2";</code>
+                <code>@import "layout_desktop";</code>
+                <code>@import "page-1_desktop";</code>
             </pre>
         </div>
     </section>
@@ -297,13 +297,14 @@
     </section>
     <section class="slide">
         <div>
+			<h2>Сложный способ</h2>
             <pre>
                 <code>{</code>
                 <code>  "mobile": [</code>
-                <code>    "layout", "component-a", "page-1"</code>
+                <code>    "layout", "component-a", "page-1", "page-2"</code>
                 <code>  ],</code>
                 <code>  "desktop": [</code>
-                <code>    "layout-desktop", "page-1-desktop"</code>
+                <code>    "layout_desktop", "page-1_desktop"</code>
                 <code>  ]</code>
                 <code>}</code>
             </pre>
