@@ -8,3 +8,12 @@ A mobile phones has almost the same processing power as a computers. But slow an
 * dynamic style and script injections;
 * optimization of the page rendering;
 * building the project.
+
+Also, I explain following topics:
+
+* Why we have started using “Mobile First” approach.
+* Why numbers of network requests matter especially for mobile environment.
+* How to use `matchMedia` to tracking environment.
+* How to implement responsive images using <picture> tag and its polyfills.
+* What benefits you can get from external image hosting and CDN.
+* How we improved speed of the compilation of styles.
